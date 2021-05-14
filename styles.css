@@ -20,17 +20,12 @@ body,p{
 h4{
     color: rgb(8, 1, 114);
 }
- .list-skill{
-     background-color:#DCDCDC;
-     color:black;
-}
+
 .foto1{
     border-radius: 100%;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+    float: left;
 }  
- .button{
+.button{
      color:white;
      background-color:red;
      padding: auto;
@@ -42,19 +37,32 @@ h4{
 }
 .foto2{
     margin:50%;
-}
+} 
 .descrição{
-    max-width: 50%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 5px;
 }
 .medium{
     max-width: 50%;
-    margin-left: 30%;
+    margin-left: 25%;
     margin-bottom: 30%;
+    background-color:#DCDCDC;
+    color:black;
 }
 .final{
-    margin-left:30% ;
-    max-width: 65%;
-    margin-right: 30%;
+    margin-left:25%;
+    max-width:50%;
+    margin-bottom: 30%;
+}
+.sbs{
+    margin-top: 10%;
+    margin-left:25%;
+    max-width: 50%;
+    text-align: center;
+    vertical-align: center;
+    margin-bottom: 15%;
+    padding: auto;
+    display: inline-block;
+}
+.teste32{
+    color: brown;
 }
