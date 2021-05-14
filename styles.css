@@ -1,28 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
 .um{
     font-size: 30px;
-    color: #363636;
-    font-family:;
+    color: #303030;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
 }
 body,p{
     font-size: 16px;
     font-family:Arial, Helvetica, sans-serif ;
-    background-color:rgb(255,400,200);
-    color: rgb(128,128,128);
+    background-color:rgb(180,200,250);
+    color: rgb(30,30,30);
+    
 }
 h4{
-    color: orange;
+    color: rgb(8, 1, 114);
 }
  .list-skill{
      background-color:#DCDCDC;
      color:black;
- }
+}
 .foto1{
     border-radius: 100%;
-}
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}  
  .button{
      color:white;
      background-color:red;
      padding: auto;
      border-radius: 3px;
      text-decoration: none;
- }
+}
+.naturalidade{
+    color: rgb(5, 151, 102);
+}
+.foto2{
+    margin:50%;
+}
+.descrição{
+    max-width: 50%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.medium{
+    max-width: 50%;
+    margin-left: 30%;
+    margin-bottom: 30%;
+}
+.final{
+    margin-left:30% ;
+    max-width: 65%;
+    margin-right: 30%;
+}
