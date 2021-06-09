@@ -50,6 +50,15 @@ function req41() {
   req4();
   
   window.onload = function(){
+    let corrigir = document.querySelectorAll('.color');
+
+    corrigir[0].style.backgroundColor = 'black';
+    corrigir[1].style.backgroundColor = 'red';
+    corrigir[2].style.backgroundColor = 'green';
+    corrigir[3].style.backgroundColor = 'yellow';
+    corrigir[4].style.backgroundColor = 'blue';
+    corrigir[5].style.backgroundColor = 'white';
+
     let blackcolor = document.querySelector('#black');
     blackcolor.classList.add('selected'); 
   };
@@ -95,12 +104,7 @@ function req41() {
       let reloadbtt = document.querySelector('#reload');
       reloadbtt.addEventListener('click', function(){
         let corrigir = document.querySelectorAll('.color');
-        corrigir[0].style.backgroundColor = 'black';
-        corrigir[1].style.backgroundColor = 'red';
-        corrigir[2].style.backgroundColor = 'green';
-        corrigir[3].style.backgroundColor = 'yellow';
-        corrigir[4].style.backgroundColor = 'blue';
-        corrigir[5].style.backgroundColor = 'white';
+
         corrigir[6].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
         corrigir[7].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
         corrigir[8].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
