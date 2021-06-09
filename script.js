@@ -10,11 +10,13 @@ function req41() {
         pixels.className = 'pixel';
         pixels.style.backgroundColor = 'white';
         row.appendChild(pixels);
-    
-     };
-    };
-  };
+    }
+  }
+}
   req41();
+
+
+
   function req4() {
     let makebox = document.querySelector('#generate-board');
     
@@ -109,9 +111,7 @@ function req41() {
         corrigir[7].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
         corrigir[8].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
         corrigir[9].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
-    
-        let blackcolor = document.querySelector('#black');
-        blackcolor.classList.add('selected'); 
+
       })
   };
   opcional();
