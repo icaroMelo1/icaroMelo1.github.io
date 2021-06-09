@@ -102,7 +102,6 @@ function req41() {
 
   function opcional(){
       let reloadbtt = document.querySelector('#reload');
-
       reloadbtt.addEventListener('click', function(){
         let corrigir = document.querySelectorAll('.color');
 
@@ -116,4 +115,3 @@ function req41() {
       })
   };
   opcional();
-
