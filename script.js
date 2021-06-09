@@ -30,9 +30,9 @@ function req41() {
       alert('Board inválido!');
       number = 5;
     }  
-    if (document.querySelector('#board-size').value > 50  ){
+    if (document.querySelector('#board-size').value > 39  ){
       alert('Board inválido!');
-      number = 50;
+      number = 39;
     }
     for (let i = 0; i < number; i += 1) {
     let row = document.createElement('div');
@@ -54,12 +54,12 @@ function req41() {
     let corrigir = document.querySelectorAll('.color');
 
     corrigir[0].style.backgroundColor = 'black';
-    corrigir[1].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
-   
-    corrigir[2].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
-   
-    corrigir[3].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
-  
+    corrigir[1].style.backgroundColor = 'red';
+    corrigir[2].style.backgroundColor = 'green';
+    corrigir[3].style.backgroundColor = 'yellow';
+    corrigir[4].style.backgroundColor = 'blue';
+    corrigir[5].style.backgroundColor = 'white';
+
     let blackcolor = document.querySelector('#black');
     blackcolor.classList.add('selected'); 
   };
@@ -104,7 +104,16 @@ function req41() {
       let reloadbtt = document.querySelector('#reload');
 
       reloadbtt.addEventListener('click', function(){
-        document.location.reload(true);
+        let corrigir = document.querySelectorAll('.color');
+
+        corrigir[6].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
+        corrigir[7].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
+        corrigir[8].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
+        corrigir[9].style.backgroundColor = `rgb(${(Math.random() * 255)}, ${(Math.random() * 255)}, ${(Math.random() * 255)})`;
+    
+        let blackcolor = document.querySelector('#black');
+        blackcolor.classList.add('selected'); 
       })
   };
   opcional();
+
