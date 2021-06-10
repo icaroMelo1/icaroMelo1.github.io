@@ -6,11 +6,11 @@ const box1 = document.querySelector('#pixel-board');
 function req41() { 
 
     for (let i = 0; i < 5; i += 1) {
-      const row = document.createElement('ol');
+      const row = document.createElement('div');
       row.className = 'row';
       box1.appendChild(row);
       for (let i = 0; i < 5; i += 1) {
-        const pixels = document.createElement('li');
+        const pixels = document.createElement('div');
         pixels.className = 'pixel';
         pixels.style.backgroundColor = 'white';
         row.appendChild(pixels);
@@ -47,17 +47,17 @@ function req41() {
       alert('Board inválido!');
       number = 5;
     }  
-    if (document.querySelector('#board-size').value > 39  ){
+    if (document.querySelector('#board-size').value > 45  ){
       alert('Board inválido!');
-      number = 39;
+      number = 45;
     }
     for (let i = 0; i < number; i += 1) {
-    let row = document.createElement('ol');
+    let row = document.createElement('div');
     row.className = 'row';
     box1.appendChild(row);
     row.style.marginBottom = '0px';
       for (let i = 0; i < number; i += 1) {
-      let pixels = document.createElement('li');
+      let pixels = document.createElement('div');
       pixels.className = 'pixel';
       row.appendChild(pixels);
     

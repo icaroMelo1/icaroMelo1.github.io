@@ -21,6 +21,10 @@
     #color-palette {
     text-align: center;
     display: inline;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+   
 }
   
     .pixel {
@@ -49,9 +53,9 @@
     }
     
     .row {
-        height: 40px;
+        height: 42px;
     }
 
     div {
-        height: 40px;
+        height: 42px;
     }
