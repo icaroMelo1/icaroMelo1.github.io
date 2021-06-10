@@ -1,20 +1,35 @@
-function req41() {
-    let box1 = document.querySelector('#pixel-board');
-   
+const box1 = document.querySelector('#pixel-board');
+
+
+
+
+function req41() { 
+
     for (let i = 0; i < 5; i += 1) {
-      let row = document.createElement('div');
+      const row = document.createElement('ol');
       row.className = 'row';
       box1.appendChild(row);
       for (let i = 0; i < 5; i += 1) {
-        let pixels = document.createElement('div');
+        const pixels = document.createElement('li');
         pixels.className = 'pixel';
         pixels.style.backgroundColor = 'white';
         row.appendChild(pixels);
     }
+
+    }
   }
-}
+
   req41();
 
+  function req42(){
+
+    for (let i = 0; i < 5; i += 1) {
+      const pixels = document.createElement('div');
+      pixels.className = 'pixel';
+      pixels.style.backgroundColor = 'white';
+      row.appendChild(pixels);
+  }
+}
 
 
   function req4() {
@@ -37,11 +52,12 @@ function req41() {
       number = 39;
     }
     for (let i = 0; i < number; i += 1) {
-    let row = document.createElement('div');
+    let row = document.createElement('ol');
     row.className = 'row';
     box1.appendChild(row);
+    row.style.marginBottom = '0px';
       for (let i = 0; i < number; i += 1) {
-      let pixels = document.createElement('div');
+      let pixels = document.createElement('li');
       pixels.className = 'pixel';
       row.appendChild(pixels);
     
@@ -69,7 +85,7 @@ function req41() {
     let seleciona = document.querySelector('#color-palette');
     let selected = document.querySelector('.color');
     seleciona.addEventListener('click', (event) => {
-      if (selected.classList.contains('selected') == false && event.target.classList.contains('color-palette') == false) {
+      if (selected.classList.contains('selected') === false) {
         event.target.classList.add('selected');
         selected = document.querySelector('.selected');
       } else {
@@ -80,7 +96,9 @@ function req41() {
     });
   };
   req7();
+
   function req8() {
+    
   document.addEventListener('click', function (event) {
     if (event.target.classList.contains('pixel') == true) {
       event.target.style.backgroundColor =  document.querySelector('.selected').style.backgroundColor;
@@ -89,6 +107,7 @@ function req41() {
   }, false);
   };
   req8();
+
   function req9() {
     let clearbutton = document.querySelector('#clear-board');
     clearbutton.addEventListener('click', function () {
