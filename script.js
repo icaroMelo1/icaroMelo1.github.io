@@ -2,8 +2,7 @@ const box1 = document.querySelector('#pixel-board');
 
 
 
-
-function req41() { 
+function pixelboard() { 
 
     for (let i = 0; i < 5; i += 1) {
       const row = document.createElement('div');
@@ -19,20 +18,11 @@ function req41() {
     }
   }
 
-  req41();
-
-  function req42(){
-
-    for (let i = 0; i < 5; i += 1) {
-      const pixels = document.createElement('div');
-      pixels.className = 'pixel';
-      pixels.style.backgroundColor = 'white';
-      row.appendChild(pixels);
-  }
-}
+  pixelboard();
 
 
-  function req4() {
+
+  function mudapixelboard() {
     let makebox = document.querySelector('#generate-board');
     
     makebox.addEventListener('click', function () {
@@ -59,13 +49,14 @@ function req41() {
       for (let i = 0; i < number; i += 1) {
       let pixels = document.createElement('div');
       pixels.className = 'pixel';
+      pixels.style.backgroundColor = 'white';
       row.appendChild(pixels);
     
      };
     };
    });
   };
-  req4();
+  mudapixelboard();
   
   window.onload = function(){
     let corrigir = document.querySelectorAll('.color');
@@ -81,7 +72,7 @@ function req41() {
     blackcolor.classList.add('selected'); 
   };
 
-  function req7() {
+  function selecionacor() {
     let seleciona = document.querySelector('#color-palette');
     let selected = document.querySelector('.color');
     seleciona.addEventListener('click', (event) => {
@@ -95,9 +86,9 @@ function req41() {
       };
     });
   };
-  req7();
+  selecionacor();
 
-  function req8() {
+  function pintaoquadro() {
     
   document.addEventListener('click', function (event) {
     if (event.target.classList.contains('pixel') == true) {
@@ -106,9 +97,9 @@ function req41() {
     };
   }, false);
   };
-  req8();
+  pintaoquadro();
 
-  function req9() {
+  function limpaoquadro() {
     let clearbutton = document.querySelector('#clear-board');
     clearbutton.addEventListener('click', function () {
       let pix = document.querySelectorAll('.pixel');
@@ -119,9 +110,9 @@ function req41() {
       }
     });
   };
-  req9();
+  limpaoquadro();
 
-  function opcional(){
+  function criarmaiscores(){
       let reloadbtt = document.querySelector('#reload');
       reloadbtt.addEventListener('click', function(){
         let corrigir = document.querySelectorAll('.color');
@@ -133,4 +124,4 @@ function req41() {
 
       })
   };
-  opcional();
+  criarmaiscores();
