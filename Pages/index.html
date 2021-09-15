@@ -1,45 +1,52 @@
 <!DOCTYPE html>
-<html lang='pt-br'>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixels Art Project</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    
-  <h1 id='title'>Paleta de Cores</h1>
-  <button id ='reload'>Criar mais cores aleatórias</button>
-  <p>selecione uma cor</p>
-  <div id='color-palette'>
-    <div id = 'black' class='color'></div>
-    <div id = 'blue' class='color'></div>
-    <div id = 'red' class='color'></div>
-    <div id = 'green' class='color'></div>
-    <div id = '4' class='color'></div>
-    <div id = '5' class='color'></div>
-    <div id = '6' class='color'></div>
-    <div id = '7' class='color'></div>
-    <div id = '8' class='color'></div>
-    <div id = '9' class='color'></div>
-  </div>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio IcaroMelo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">    
+  </head>
+  <body>
+    <header class="header">
+        <h1 class="myName">
+          Icaro Melo
+        </h1> 
+      <div class="image">
+        <img class="image" id="retorno" src="fotominha.jpeg" alt="Foto do Icaro">
+      </div>
+    </header>
 
-  <section id='buttons'>
-    <p>escolha o tamanho do quadro</p>
-    <button id='clear-board' >Limpar quadro</button>
+    <section class="bodyOfPage">
+      <div class="descricao">
+        <p>
+          -Nessa foto, acabei de realizar os exercicios do dia 3.1 da Trybe !!!
+        </p>
+        <p>
+          -Tenho 20 anos, sou natural de Fortaleza-ce, sempre gostei muito de jogos e da tecnologia envolvida, hoje faço Eng.Mecatronica no IFCE e o curso da Trybe, além de uns freelancers aos domingos.
+        </p>
+      </div>
+  
+      <div class="skills">
+        <h4>Habilidades:</h4>
+        <ul class="list-skill">
+          <li>Desenvolvendo habilidades web full stack</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>React</li>
+          <li>RTL</li>
+          <li>Redux</li>
+        </ul>
+      </div>
+    </section>
 
-    <input id='board-size' type='number' max='39' min='5'>
+    <div class="final">
+      <p>Um canal que gosto e acompanho é o<a class="button"href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmpYekwyMWZnSW9iZ3AzUy1QQTh3S2dhUjJJZ3xBQ3Jtc0tsNmtGSjBiUmQ1UlJGSkZraHduS2ZwLVpnNlBmMkM1YzJPYUhyVUxoc0NsTmFBazN3ZmpUU3ltWjhWeUQ3NkhObUlCYkQwWVlfMDJOMm85TGZyWXhNREFhUW0zXzJaTkVmOXRVcWV3WEQ2dngwSVFZWQ&q=https%3A%2F%2Fwww.instagram.com%2Fmw.informatica%2F" target="_blank"> MW informática.</a></p>
+    </div>
 
-    <button id='generate-board'>OK</button>
+    <a class="Center" href="#retorno"><strong>retorne ao inicio</strong></a>
 
-  </section>
-  <h2>Divirta-se</h2>
-  <table id='pixel-board'></table>
-    
-
-
-
-  <script type="text/javascript" src="script.js"></script>
-</body>
+  </body>
 </html>
