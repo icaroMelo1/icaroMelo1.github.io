@@ -1,7 +1,5 @@
 const box1 = document.querySelector('#pixel-board');
 
-
-
 function pixelboard() { 
 
     for (let i = 0; i < 5; i += 1) {
