@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+.header{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-color: aquamarine;
+  size: 12px;
+}
+
+.myName{
+  font-size: 25px;
+  background-color: azure;
+}
+
+.image {
+  width: 120px;
+  background-color: bisque;
+}
