@@ -24,8 +24,6 @@ export class Footer extends Component {
             <br />
           </div>
         </section>
-
-        <a class="Center" href="#retorno"><strong>retorne ao inicio</strong></a>
       </div>
     );
   }
