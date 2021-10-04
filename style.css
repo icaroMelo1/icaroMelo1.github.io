@@ -1,0 +1,47 @@
+* {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.myName {
+  font-size: xxx-large ;
+}
+
+.image {
+  width: 20%;
+  margin-left: 5%;
+  border: 1px solid black;
+}
+
+.descricao {
+  display: flex;
+}
+
+.inside-paragrafo {
+  margin-left: 1%;
+}
+
+/* .paragrafo {
+  border: 1px solid black;
+} */
+
+.skills {
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inside-skills {
+  margin-right: 10%;
+}
+
+.redirect {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
