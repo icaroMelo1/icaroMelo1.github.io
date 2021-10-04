@@ -1,47 +1,94 @@
 * {
+  margin: 0;
   text-decoration: none;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-}
+@media screen and (min-width: 720px ) {
 
-.myName {
-  font-size: xxx-large ;
-}
+  body {
+    background-color: #7c7474f3;
+  }
 
-.image {
-  width: 20%;
-  margin-left: 5%;
-  border: 1px solid black;
-}
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
 
-.descricao {
-  display: flex;
-}
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .myName {
+    margin-top: 1%;
+    font-size: xxx-large ;
+  }
+  
+  .image {
+    width: 200px;
+    height: 200px;
+    margin: 2% 3% 2% 5%;
+  }
+  
+  .descricao {
+    display: flex;
+    border: 7px solid  slategray;
+    margin: 2% 4% 4% 4%;
+  }
+  
+  p {
+    margin-bottom: 1%;
+  }
 
-.inside-paragrafo {
-  margin-left: 1%;
-}
+  .paragrafo {
+    margin-top: 2%;
+    margin-right: 10%;
+  }
 
-/* .paragrafo {
-  border: 1px solid black;
-} */
+  .inside-paragrafo {
+    margin-left: 1%;
+  }
+  
+  /* .paragrafo {
+    border: 1px solid black;
+  } */
 
-.skills {
+  .certificados {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  
+  .skills {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .inside-skills {
+    margin-right: 10%;
+  }
+  
+  .redirect {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-  display: flex;
-  justify-content: space-evenly;
-}
+  .footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-.inside-skills {
-  margin-right: 10%;
-}
-
-.redirect {
-  margin-top: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .direitos {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+  }
 }
